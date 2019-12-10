@@ -9,6 +9,7 @@ verify_ssl = true
 behave = "*"
 behave-pytest = "*"
 selenium = "*"
+webdriver_manager = "*"
 
 [requires]
 python_version = "3.6"

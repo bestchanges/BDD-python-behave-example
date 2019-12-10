@@ -3,13 +3,14 @@ import time
 
 from behave import fixture, use_fixture
 
-from selenium.webdriver import Chrome
-
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 @fixture
 def browser_firefox(context):
     print("Browser init")
-    browser = Chrome()
+
+    browser = webdriver.Chrome(ChromeDriverManager().install())
     browser.implicitly_wait(1)
 
     context.browser = browser

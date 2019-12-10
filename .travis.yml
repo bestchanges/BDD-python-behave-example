@@ -1,9 +1,10 @@
+dist: trusty
 language: python
 python:
 - '3.6'
 install:
   - pip install pipenv
-  - pipenv install
+  - pipenv sync
 addons:
   chrome: stable
 before_install:
