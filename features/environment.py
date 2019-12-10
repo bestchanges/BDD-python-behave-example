@@ -1,16 +1,23 @@
 # Take from: https://github.com/StephenDavidson/python-bdd-behave/blob/master/features/environment.py
+import os
 import time
 
 from behave import fixture, use_fixture
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 @fixture
 def browser_firefox(context):
     print("Browser init")
 
-    browser = webdriver.Chrome(ChromeDriverManager().install())
+
+    chrome_options = Options()
+    if os.environ.get('HEADLESS'):
+        chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--disable-gpu")
+    browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
     browser.implicitly_wait(1)
 
     context.browser = browser
