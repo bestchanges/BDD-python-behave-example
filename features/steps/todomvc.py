@@ -1,3 +1,4 @@
+import json
 from typing import List, Optional
 
 from behave import *
@@ -94,4 +95,16 @@ def step_impl(context):
         task_name = row['taskname']
         add_task(context, task_name)
         if row['completed'].lower() == 'true':
+            complete_task(context, task_name)
+
+
+@step("there are todo-items loaded from json")
+def step_impl(context):
+    text = context.text
+    assert text
+    json_data = json.loads(text)
+    for row in json_data:
+        task_name = row['taskname']
+        add_task(context, task_name)
+        if row['completed']:
             complete_task(context, task_name)
