@@ -1,4 +1,3 @@
-# Take from: https://github.com/StephenDavidson/python-bdd-behave/blob/master/features/environment.py
 import os
 import time
 
@@ -7,6 +6,7 @@ from behave import fixture, use_fixture
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+
 
 @fixture
 def browser_firefox(context):
