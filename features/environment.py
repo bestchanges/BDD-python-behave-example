@@ -12,11 +12,9 @@ from selenium.webdriver.chrome.options import Options
 def browser_firefox(context):
     print("Browser init")
 
-
     chrome_options = Options()
     if os.environ.get('HEADLESS'):
         chrome_options.add_argument("--headless")
-    # chrome_options.add_argument("--disable-gpu")
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
     browser.implicitly_wait(1)
 

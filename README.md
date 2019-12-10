@@ -16,6 +16,6 @@ $ pipenv run behave
 ```
 
 # Запуск по расписанию
-Добавлен запуск в процесе CI используя Travis. Также настроен регулярный запуск раз в неделю.
+Добавлен запуск в процесе CI используя Travis.
 
 Статус последнего запуска: [![Build Status](https://travis-ci.com/bestchanges/BDD-python-behave-example.svg?branch=master)](https://travis-ci.com/bestchanges/BDD-python-behave-example)
