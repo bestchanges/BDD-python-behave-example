@@ -11,7 +11,7 @@ Feature: As a lazy developer I want to test todomvc.com automatically
     Then there is todo-item 'My first task' in the list
     And task 'My first task' is not completed
 
-  Scenario: user creates new item and mark it as complited
+  Scenario: user creates new item and mark it as completed
     Given user add task 'To complete'
     When click checkbox for task 'To complete'
     Then task 'To complete' is completed
