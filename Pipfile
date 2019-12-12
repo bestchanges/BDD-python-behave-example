@@ -7,7 +7,6 @@ verify_ssl = true
 
 [packages]
 behave = "*"
-behave-pytest = "*"
 selenium = "*"
 webdriver_manager = "*"
 
