@@ -11,4 +11,4 @@ install:
 addons:
   chrome: stable
 script:
-  - pipenv run behave
+  - pipenv run behave --tags=~@wip
