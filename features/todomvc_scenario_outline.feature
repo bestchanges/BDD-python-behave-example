@@ -1,3 +1,4 @@
+@templates
 Feature: Example of Scenario Outline and Examples
 
   Background:
