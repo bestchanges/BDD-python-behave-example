@@ -1,4 +1,4 @@
-[![Last test Status](https://travis-ci.com/bestchanges/BDD-python-behave-example.svg?branch=master)](https://travis-ci.com/bestchanges/BDD-python-behave-example)
+Last run status: [![Last test Status](https://travis-ci.com/bestchanges/BDD-python-behave-example.svg?branch=master)](https://travis-ci.com/bestchanges/BDD-python-behave-example)
 
 # BDD Python Behave Selenium Example
 Пример реализации концепции Behavior Driven Development на Python во фреймворке Behave. 
